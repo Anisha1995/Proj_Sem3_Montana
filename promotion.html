@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Montonas bbq & bar index</title>
+        <link rel="stylesheet" href="style.css">
+         <style type="text/css">
+          .orderbtn {
+  background-color: #CB4335;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+   border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.orderbtn:hover {opacity: 1}
+        .topnav 
+        {
+                   overflow: hidden;
+                  background-color: black;
+        }
+
+        .topnav a 
+        {
+          float: left;
+          /*padding-left: 1500px;*/
+          color: #f2f2f2;
+          /*text-align: left;*/
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        .topnav a:hover 
+        {
+          background-color: red;
+          color: black;
+        }
+        /*image scoll*/
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1269px;
+  position: relative;
+  margin: auto;
+    height: 700px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*scroll*/
+        </style>
+</head>
+<body>
+         <div class="top">
+                    <a href="#" style="text-decoration: none;">Select a location</a>
+                    <a href="#" style="text-decoration: none;">Make a reservation</a>
+
+     
+     <div class="heading">    
+                <p style="text-align: left;">
+                      <a href="index.html">
+                      <img border="0" alt="index" src="../Montana/images/logo.png" align="left" width="80px" height="47px" style="display: inline;">
+                      </a>
+                </p>          
+            <div class="topnav">
+              
+                      <a href = "menu.html">Menu</a>
+                      <a href="locations.html">Locations</a> 
+                      <a href= "grillLoversClub.html">Grill Lovers Club</a>
+                      <a href="kids.html">Kids</a>
+                      <a href="JoinourTeam.html">Join our team</a>
+                      <a href="Promotion.html">Promotions</a>
+              </div>
+            </div>
+          
+          <div class="mid-portion">
+          <!-- 
+            <img src="../Montana/images/promotion/index.png" width="100%" height="500"> -->
+
+            <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="../Montana/images/promotion/scrol1.png" style="width: 1269px;   height:750px ;">
+</div>
+
+<div class="mySlides fade">
+  <img src="../Montana/images/promotion/scrol2.png" style="width: 1269px;   height:750px ;">
+</div>
+
+<div class="mySlides fade">
+  <img src="../Montana/images/promotion/scrol3.png" style="width: 1269px;   height:750px ;">
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<!-- 
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div> -->
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+          </div>
+          <br><br>
+            <br><br>
+
+          <!-- <div class="mid-portion2">
+
+            <img src="../Montana/images/promotion/images/Capture1.jpg" width="250" height="300">
+          </div>
+ -->
+
+          <div class="promotionform" align="center";height: 600px;width: 400px;>
+          <form>
+            <table width="300" align="center">
+            <th colspan="2">
+                  <tr>  
+                  <div>                 
+                    <td><img src="../Montana/images/promotion/images/Capture1.jpg" width="500px" height="500px" align="center">
+                       <p>
+                        <h3 align="center">ll7oz AAA Sirloin</h3>
+                      Satisfy your steak craving with our 7 oz. AAA Canadian Sirloin. This piece of meat is aged for 50 days and seasoned to perfection, plus it’s served with two delicious onion rings. There’s nothing simple about it.
+                      </p>
+                      <button class="orderbtn">ORDER NOW</button>
+                    </td>
+                    </div>
+                    <div>
+                      <td><img src="../Montana/images/promotion/images/Capture2.jpg" width="500px" height="500px"
+                      align="center">
+                      <p>
+
+                       <h3 align="center">NEW! Seasonal Steak Special</h3>
+                      Picture this, our 7oz AAA Canadian Sirloin topped with a garlic herb butter and served with all the fixin’s. If that doesn’t have your mouth-watering yet, it's also served with four mini donuts with an English toffee 
+
+                      </p><!-- dipping sauce. Drooling? We thought so! -->
+
+                    </td>
+                    </div>
+                  </tr>
+                </table>
+                <br>
+                <br>
+
+                <table width="300" align="center">
+                  <th colspan="2">
+                  <tr>
+                    <div>
+                      <td><img src="../Montana/images/promotion/images/Capture3.jpg" width="500px" height="500px" align="left">
+                      <p>
+
+                      <h3 align="center">NEW! Lobster n' Shrimp Steak</h3>
+                      As if our 7oz AAA Canadian Sirloin could get any more decadent, we’ve gone and added a creamy sauce filled with chunks of shrimp and Atlantic lobster to it. How’s that for kickin’ up your steak plate?
+
+                      </p>
+                    </div>
+                    <div>
+                    <td><img src="../Montana/images/promotion/images/Capture4.jpg" width="500px" height="500px"
+                      align="right">
+                      <p>
+                      <h3 align="center">Kickin’ Creamy Shrimp Steak</h3>
+                        Lookin’ for the best of both worlds? This is your dish! Our 7 oz. Canadian AAA Top Sirloin is grilled to perfection then topped with our Kickin’ Creamy Shrimp. Your taste buds will thank you.
+                      </p>
+                       <button class="orderbtn">ORDER NOW</button>
+                    </td>
+                    </div>
+
+                  </tr>
+                </table>
+                <br>
+                <br>
+
+                <table width="300" align="center">
+                  <th colspan="2">
+                  <tr>
+                    <div>
+                      <td><img src="../Montana/images/promotion/images/Capture5.jpg" width="500px" height="450px" align="left">
+
+                        <p>
+                        <h3 align="center">Canadian Sirloin with Grilled Shrimp</h3>
+When you need the perfect mix of surf and turf, we’ve got it. Our 7oz AAA Canadian Sirloin is fire-grilled to order and topped with two garlic shrimp skewers. Best of both worlds on one plate!
+                        </p>
+                        <button class="orderbtn">ORDER BUTTON</button>
+                      </td>
+                      <div>
+                    <td><img src="../Montana/images/promotion/images/Capture6.jpg" width="500px" height="450px"
+                      align="right">
+
+
+                      <p>
+                   <h3 align="center"> NEW! Chorizo Country Steak</h3>
+Our creamy country gravy with crumbled pork chorizo sausage is layered over a 7oz fire-grilled AAA Canadian Sirloin. We’re giving you a way to have your steak and chorizo too!
+
+<!-- Created by 2019 Culinary Competition Winner, Brandon Dundan, from Montana’s® Timmins. -->
+                    </p>
+                    </td>
+                    </div>
+
+                  </tr>
+                </table>
+                <br>
+
+
+                <table width="100" align="center">
+                  <th colspan="1">
+                  <tr>
+                    <div>
+                      <td><img src="../Montana/images/promotion/images/Capture7.jpg" width="500px" height="500px" align="left">
+
+                          <p>
+                            <h3 align="center">NEW! Lobster & Shrimp Mac N’ Cheese</h3>
+Kick up your mac n’ cheese experience with our version! Spiral pasta loaded with chunks of Atlantic lobster & shrimp and baked until golden brown. Delicious? oh yeah
+                          </p>
+                          <button class="orderbtn">ORDER BUTTON</button>
+                      </td>
+                    <!-- <td><img src="../Montana/images/promotion/images/Capture3.jpg" width="500px" height="500px"
+                      align="right"></td> -->
+                    </div>
+
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+
+           <!--  <div  class="indexpg-body4 " style="background-image: url('../Montana/images/index/index5.png');width:100%;height:165px">
+         
+          <br>
+          
+        <h2 style="color: white;">CONNECT WITH US</h2><br>
+        <p><a href="https://www.facebook.com/montanasBBQ"><img src="../Montana/images/index/fb.png" width="40px"  height="40"></a>
+        <a href="https://www.instagram.com/montanasbbq/"><img src="../Montana/images/index/instagram.png" width="40" height="40"></a>
+         <a href="https://twitter.com/montanasBBQ"><img src="../Montana/images/index/twitter.png" width="40" height="40"></a></p>
+         
+      </div> -->
+
+
+      <div class="footer-first" style="text-align: center;">
+             <br>
+              <br>
+               <br>
+                <br>
+           
+                <table cellspacing="35px" align="center">
+                  <th></th>
+
+                  <tr>
+                    <td><a href="https://theultimatediningcard.ca/udc/" style="text-decoration: none;">Gift Cards |</a></td>
+                    <td><a href="#" style="text-decoration: none;">Privacy Policy |</a> </td>
+                    <td><a href="#" style="text-decoration: none;">Terms of Use |</a></td>
+                    <td><a href="http://www.carafranchising.com/" style="text-decoration: none;">Franchising |</a></td>
+                    <td><a href="#" style="text-decoration: none;">Nutrition Guide |</a></td>
+                    <td><a href="https://careersen-recipeunlimited.icims.com/jobs/search?ss=1&searchCategory=22693+&mobile=false&width=940&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240" style="text-decoration: none;" >Open Positions |</a></td>
+                    <td><a href="https://www.recipeunlimited.com/en/accessibility.html" style="text-decoration: none;">Accessibility |</a></td>
+                    <td><a href="#" style="text-decoration: none;">Contact</a></td>
+
+                  </tr>
+
+                  <tr>
+                     <td ><a href="https://www.facebook.com/montanasBBQ"><img src="../Montana/images/footer/facebook.png" width="40" height="40" /></a></td>
+                     <td><a href="https://twitter.com/MontanasBBQ"><img src="../Montana/images/footer/twitter.jpg" width="40" height="40"/></a></td>
+                     <td><a href="https://www.instagram.com/montanasbbq/"><img src="../Montana/images/footer/instagram.png" width="40" height="40"/></a></td>
+                  </tr>
+
+                 
+                </table>
+                <p>® Registered Trademark of Recipe Unlimited Corporation</p>
+                <!-- <button class="btn">BACK TO TOP</button> -->
+                  
+                   
+           
+           
+      </div>
+
+         </body>
+        </html>

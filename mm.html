@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Montonas bbq & bar index</title>
+        <link rel="stylesheet" href="style.css">
+         <style type="text/css">
+        .footer-first{
+                       background-color: black;
+                       color: white;
+        }
+        a{
+                       color: white;
+        }
+      
+        .topnav a 
+        {
+          float: left;
+          color: #f2f2f2;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        .topnav a:hover 
+        {
+          background-color: red;
+          color: black;
+        }
+        
+        .topnav {
+      /*height: 25px;*/
+      /*transition: height 2s;*/
+      /*overflow: hidden;*/
+      max-height: 25px;
+      /*transition: max-height 2s;*/
+      animation-name: example;
+        animation-duration: 2s;
+        background-color: black;
+
+    }
+
+    .topnav:hover {
+      /*height: 500px;*/
+      max-height: none;
+      /*transition: height 2s;*/
+    }
+
+    /* Standard syntax */
+    @keyframes example {
+      from {
+        background-color: black;
+        max-height: 25px;
+      }
+      to {
+        max-height: none;
+      }
+    }
+      
+
+        </style>
+        <script type="text/javascript">
+    function showPromotions(){
+      document.getElementById('hidden_content').innerHTML = "<h1>Promotions</h1>";
+    }
+
+    function showMenu(){
+      document.getElementById('hidden_content').innerHTML = "<h1>Menu</h1>";
+    }
+
+    function clearOut(){
+      document.getElementById('hidden_content').innerHTML = "";
+    }
+  </script>
+</head>
+<body>
+     <div class="top">
+                    <a href="#">Select a location</a>
+                    <a href="#">Make a reservation</a>
+
+     
+         <div class="heading">    
+                <p style="text-align: left;">
+                      <a href="index.html">
+                      <img border="0" alt="index" src="../Montana/images/logo.png" align="left" width="80px" height="35px" style="display: inline;">
+                      </a>
+                </p>          
+            <div class="topnav">
+                  <a href ="menu.html" onmouseover="onMenu()" onmouseout="clearout()">Menu</a>
+                  <a href="locations.html">Locations</a> 
+                  <a href= "grillLoversClub.html">Grill Lovers Club</a>
+                  <a href="kids.html">Kids</a>
+                  <a href="JoinourTeam.html">Join our team</a>
+                  <a href="Promotions.html" onmouseover="onPromotions()" onmouseout="clearout()">Promotions</a>
+                  <div id="hidden_content"></div>
+              </div>
+
+              <!-- <div class="parent" style="color: white; height: 70px;" >
+              <div>
+                <div class="myButton" 
+                style="display: inline-block;" 
+                onmouseover="showMenu()"
+                onmouseout="clearOut()"
+                >Menu
+                </div>
+                <div  style="display: inline-block;" >Locations                   
+                </div>
+                <div 
+                class="myButton" 
+                style="display: inline-block;"
+                onmouseover="showPromotions()"
+                onmouseout="clearOut()"
+                >Promotions
+                </div>
+              </div>
+              <div id="hidden_content"></div>
+            </div> -->
+
+
+
+
+
+              <div id="topnav_content">
+              <!-- <h1>Our thing</h1> -->
+              </div>
+            </div>      
+                
+      </div>
+
+
+ <div class="indexpage-header-bottom">
+          <h3 style="color: white; text-align: center; background:red;">
+            <b>ORDER NOW</b>
+          </h3>
+ </div>
+
+
+  <div class="indexpg-mid-portion" style="background-image: url('../Montana/images/index/indeximage.png');">
+          
+           
+
+  </div>
+
+
+  <div class="indexpg-body" style="background-image: url('../Montana/images/index/index1.png');">
+         
+        <div class = "indexpg-bg-text"> 
+         
+            <p><h1><strong> BRING TAKEOUT HOME</strong></h1></p>            
+            <p>Order & Pay Ahead Online and we’ll have have your</p>
+              <p>BBQ Ready.</p>
+            <button class ="btn">BROWSE LOCAL MENUS </button>
+      </div>
+ </div>
+
+
+
+      <div class="indexpg-body1" style="background-image: url('../Montana/images/index/index2.png'); ">
+        
+        <div class = "indexpg-bg-text1" style="text-align: center;"> 
+          <p style="font-size: 50px">
+            Uber Eats
+            <img src="../Montana/images/index/uber.png" width="150px" height="50px">
+          </p>         
+          <p><h1>Get Your BBQ Delivered</h1></p>
+          <p>Can't make it in due to the weather, your busy schedule or <br> just don't have a car? Get Montana's delivered right to your </p>
+          <p style="text-align: center;">door. </p>
+          <button class="btn">ORDER DELIVERY</button>
+          </div>
+      </div>
+  
+
+      <div class="indexpg-body2" style="background-image: url('../Montana/images/index/index3.png'); ">
+              <div class = "indexpg-bg-text2"> 
+              <h3 style="color: white;">BBQ Done In-House Means BBQ Done Right</h3>
+              <button class ="btn">SEE MENU</button>
+            </div> 
+            
+      </div>
+
+
+      <div class="indexpg-body3 " style="background-image: url('../Montana/images/index/index4.png');">
+             <div class = "indexpg-bg-text3"> 
+
+            <h3 style="color: white;">ICE COLD BEERS, CANADIAN COCKTAILS AND DAILY DRINK DEALS</h3>
+            <button class ="btn">BAR MENU</button>
+          </div>
+      </div>
+
+
+      <div  class="indexpg-body4 " style="background-image: url('../Montana/images/index/index5.png');width:100%;height:165px">
+         
+          <br>
+          
+        <h2 style="color: white;">CONNECT WITH US</h2><br>
+        <p><a href="https://www.facebook.com/montanasBBQ"><img src="../Montana/images/index/fb.png" width="40px"  height="40"></a>
+        <a href="https://www.instagram.com/montanasbbq/"><img src="../Montana/images/index/instagram.png" width="40" height="40"></a>
+         <a href="https://twitter.com/montanasBBQ"><img src="../Montana/images/index/twitter.png" width="40" height="40"></a></p>
+         
+      </div>
+
+
+      <div class="footer-first" style="text-align: center;">
+             <br>
+              <br>
+               <br>
+                <br>
+           
+                <table cellspacing="35px" align="center">
+                  <th></th>
+
+                  <tr>
+                    <td><a href="https://theultimatediningcard.ca/udc/">Gift Cards</a>|</td>
+                    <td><a href="#">Privacy Policy</a> |</td>
+                    <td><a href="#">Terms of Use |</a></td>
+                    <td><a href="http://www.carafranchising.com/">Franchising |</a></td>
+                    <td><a href="#">Nutrition Guide |</a></td>
+                    <td><a href="https://careersen-recipeunlimited.icims.com/jobs/search?ss=1&searchCategory=22693+&mobile=false&width=940&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240" >Open Positions |</a></td>
+                    <td><a href="https://www.recipeunlimited.com/en/accessibility.html">Accessibility |</a></td>
+                    <td><a href="#">Contact</a></td>
+
+                  </tr>
+
+                  <tr>
+                     <td ><a href="https://www.facebook.com/montanasBBQ"><img src="../Montana/images/footer/facebook.png" width="40" height="40" /></a></td>
+                     <td><a href="https://twitter.com/MontanasBBQ"><img src="../Montana/images/footer/twitter.jpg" width="40" height="40"/></a></td>
+                     <td><a href="https://www.instagram.com/montanasbbq/"><img src="../Montana/images/footer/instagram.png" width="40" height="40"/></a></td>
+                  </tr>
+
+                 
+                </table>
+                <p>® Registered Trademark of Recipe Unlimited Corporation</p>
+                <button class="btn">BACK TO TOP</button>
+                  
+                   
+           
+           
+      </div>
+
+</body>
+</html>

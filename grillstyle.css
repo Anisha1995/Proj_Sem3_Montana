@@ -1,0 +1,44 @@
+ .footer-first
+ {
+    background-color: black;
+    color: white;
+}
+a
+{
+    color: white;
+}
+.topnav 
+{
+    overflow: hidden;
+    background-color: black;
+}        
+.topnav a 
+{
+    float: left;         
+    color: #f2f2f2;          
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover 
+{
+    background-color: red;
+    color: black;
+}
+.submitbtn
+{
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 6px 22px;
+    text-align: center;
+    font-size: 16px;
+    margin: 2px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.submitbtn : hover
+{
+   opacity: 1
+}
